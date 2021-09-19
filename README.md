@@ -3,7 +3,7 @@ This project includes several notebooks and a small library to help you learn SA
 which cover the following points:
   * viewing electron density voxels of an ellipsoid in 3D real space
   * Fourier transform of the voxel values into the reciprocal space
-  * spherically averaging int the reciprocal space
+  * spherically averaging in the reciprocal space
   * which produces a detector image and a scattering curve
 as shown in the figure below.
 
