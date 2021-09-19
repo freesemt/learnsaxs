@@ -9,7 +9,7 @@ as shown in the figure below.
 
 <img src="images/detector.png">
 
-The notebooks are designed to use minimum number of libraries, i.e.
+The notebooks are designed to use a minimum number of libraries, i.e.
 
   * numpy
   * matplotlib
