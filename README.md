@@ -9,7 +9,7 @@ as shown in the figure below.
 
 <img src="images/detector.png">
 
-The notebooks are designed to use a minimum number of libraries, i.e.
+The notebooks are designed to use a minimum number of libraries, i.e.,
 
   * numpy
   * matplotlib
@@ -21,7 +21,7 @@ the last of which, "learnsaxs", is provided here to include following few functi
   * get_detector_info
   * draw_detector_image
 
-to make the notebooks as concise as possible.
+to make the notebook examples as concise as possible.
 
 You can install the learnsaxs package using pip command as follows.
 
