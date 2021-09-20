@@ -1,6 +1,6 @@
 # learnsaxs
 This project includes several notebooks and a small library to help you learn SAXS with Python in Jupyter,
-which cover the following points:
+which cover the following subjects:
   * viewing electron density voxels of an ellipsoid in 3D real space
   * Fourier transform of the voxel values into the reciprocal space
   * spherically averaging in the reciprocal space
