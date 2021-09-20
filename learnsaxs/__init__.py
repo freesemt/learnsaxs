@@ -52,12 +52,12 @@ def get_detector_info(q, F):
     dx = side/dn
     dV = dx**3
     V = side**3
-    x_ = np.linspace(-halfside,halfside,dn)
-    x,y,z = np.meshgrid(x_,x_,x_,indexing='ij')
-    r = np.sqrt(x**2 + y**2 + z**2)
+    # x_ = np.linspace(-halfside,halfside,dn)
+    # x,y,z = np.meshgrid(x_,x_,x_,indexing='ij')
+    # r = np.sqrt(x**2 + y**2 + z**2)
 
     df = 1/side
-    qx_ = np.fft.fftfreq(x_.size)*dn*df*2*np.pi
+    qx_ = np.fft.fftfreq(dn)*dn*df*2*np.pi
 
     qx, qy, qz = np.meshgrid(qx_,qx_,qx_,indexing='ij')
     qr = np.sqrt(qx**2+qy**2+qz**2)
