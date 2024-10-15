@@ -4,7 +4,7 @@ from scipy import ndimage, interpolate
 
 def draw_voxles_as_dots(ax, image, cmap=cm.plasma, min_value=0, colorbar=False, limits=None):
     w = np.where(image > min_value)
-    wi = np.array(w, dtype=np.int).T
+    wi = np.array(w, dtype=int).T
     xyz = wi
     v = image[w]
     sc = ax.scatter3D(xyz[:,0], xyz[:,1], xyz[:,2], c=v, cmap=cmap, alpha=1, s=30)
