@@ -1,3 +1,9 @@
+name: Upload Python Package to TestPyPI when a Release is Created
+
+on:
+  release:
+    types: [created]
+
 jobs:
   pypi-publish:
     name: Publish package distributions to TestPyPI
