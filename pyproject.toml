@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "learnsaxs"
-version = "0.0.4"
+version = "0.0.5"
 
 dependencies = [
   "numpy",
@@ -15,11 +15,11 @@ dependencies = [
 requires-python = ">=3.9"
 
 authors = [
-  {name = "Masatsuyo Takahashi", email = "freesemt@gmail.com"},
+  {name = "Masatsuyo Takahashi"},
 ]
 
 maintainers = [
-  {name = "Masatsuyo Takahashi", email = "freesemt@gmail.com"}
+  {name = "Masatsuyo Takahashi"},
 ]
 
 description = "Jupyter Notebook examples for SEC-SAXS learning"

@@ -94,16 +94,20 @@ def draw_detector_image(ax, q, y):
     import matplotlib.cm as cm
 
     assert len(q) == len(y)
-    n = len(y)
     qmax = q[-1]
     theta = np.linspace(0, 2*np.pi, 400)
     rho = np.linspace(0, qmax, 400)
-    u,r = np.meshgrid(theta,rho)
-    X = r*np.cos(u)
-    Y = r*np.sin(u)
-    # r -> y
+
+    # Compute edges (suggested by Copilot)
+    theta_edges = np.linspace(0, 2*np.pi, 401)
+    rho_edges = np.linspace(0, qmax, 401)
+    u_edge, r_edge = np.meshgrid(theta_edges, rho_edges)
+    X_edge = r_edge * np.cos(u_edge)
+    Y_edge = r_edge * np.sin(u_edge)
+
+    u, r = np.meshgrid(theta, rho)
     interp = interpolate.interp1d(q, y, kind='cubic', fill_value="extrapolate")
     Z = interp(r)
-    im = ax.pcolormesh(X, Y, Z, cmap=cm.plasma, shading="auto")
-    # fig.colorbar(im, ax=ax)
+
+    im = ax.pcolormesh(X_edge, Y_edge, Z, cmap=cm.plasma, shading="auto")
     ax.set_aspect('equal', 'datalim')
